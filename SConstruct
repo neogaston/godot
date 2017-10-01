@@ -193,9 +193,9 @@ for x in module_list:
     tmppath = "./modules/" + x
     sys.path.append(tmppath)
     try:
-	import config
-	if (not config.is_enabled()):
-	    module_enabled = False
+        import config
+        if(not config.is_enabled()):
+            module_enabled = False
     except:
 	pass
     sys.path.remove(tmppath)
